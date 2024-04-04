@@ -1,0 +1,6 @@
+In case of receiving the following error while trying to push to GitHub:
+"SSL certificate problem: unable to get local issuer certificate"
+Run the following line in the cmd: git config --global http.sslBackend schannel
+https://komodor.com/learn/
+ow-to-fix-ssl-certificate-problem-unable-to-get-local-issuer-certificate-git-error/
+#:~:text=What%20causes%20'ssl%20certificate%20problem,which%20leads%20to%20the%20error.

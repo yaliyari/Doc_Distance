@@ -1,0 +1,7 @@
+This is a sample test file
+This test file is created to test the functionality of doc distance function
+This test file was created on March 30, 2024
+I might add more lines in future to this file, but for now it is just few lines to test the peforance of the file,
+to assess whethere the doc distance code work as expected. 
+
+Later, I will add longer and more complex text files to test the performance. 

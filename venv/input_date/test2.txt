@@ -1,0 +1,8 @@
+This is the second sample test file to test the performance of doc distance codes
+This test file is created to test the functionality of doc distance function and used as the second test file
+This test file was created on APril, 2024
+
+This test file can be replaced by any other test file, and the purpose here is just to show the performance of 
+the code under different methodology, so that is the reason the length is not too long!
+
+Fee free to replace it with any other text file! 
