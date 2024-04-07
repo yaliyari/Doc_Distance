@@ -19,28 +19,20 @@ import os
 
 def main():
     os.chdir("./input_date/")
-    print("Hi")
 
     # If you run the code using Pycharm or other IDEs
     text_files = ['Gatsby.txt', 'MobyDick.txt', 'Picture_Gray.txt', 'Tale_2Cities.txt', 'test1.txt', 'test2.txt']
     if len(sys.argv) != 3:
         print("set the file names inside the code")
         f_name1 = text_files[0]
-        f_name2 = text_files[0]
+        f_name2 = text_files[1]
     else:
         # If you run the code from the command line format: main_simple.py filename_1 filename_2
         f_name1 = sys.argv[1]
         f_name2 = sys.argv[2]
 
-    f_data1 = dist_functions_v1.read_text_files(f_name1)
-    f_data2 = dist_functions_v1.read_text_files(f_name2)
-    print(f"The following two text files are used: {f_name1} and {f_name2}")
-    words_1 = dist_functions_v1.get_words_from_list(f_data1)
-    words_2 = dist_functions_v1.get_words_from_list(f_data2)
-    # print(words_2)
-    # Word frequency calculation:
-    freq_1 = dist_functions_v1.word_frequency_count(words_1)
-    freq_2 = dist_functions_v1.word_frequency_count(words_2)
+    freq_1 = dist_functions_v1.word_frequency_for_file(f_name1)
+    freq_2 = dist_functions_v1.word_frequency_for_file(f_name2)
 
     # Calculating the angle between two text files
     angle = dist_functions_v1.calc_angle(freq_1, freq_2)

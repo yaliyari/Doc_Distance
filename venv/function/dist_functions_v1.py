@@ -15,7 +15,7 @@ def read_text_files(file_name):
         sys.exit()
 
 
-def get_words_from_list(line_list):
+def get_words_from_line_list(line_list):
     """parse the list lines from the previous method, into words
     and return list of words"""
     word_list = []
@@ -70,9 +70,14 @@ def word_frequency_count(word_list):
                 break
         else:
             pair_list.append([new_word, 1])  # if break then the word already exists and just we added to frequency
-    if method == 3:
-        insertion_sort(pair_list)
     return pair_list
+
+
+def word_frequency_for_file(file_name):
+    line_list = read_text_files(file_name)
+    word_list = get_words_from_line_list(line_list)
+    freq_mapping = word_frequency_count(word_list)
+    return freq_mapping
 
 
 def insertion_sort(A):
